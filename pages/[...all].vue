@@ -2,13 +2,11 @@
 definePageMeta({ layout: 'empty' });
 </script>
 <template>
-    <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+    <div class="fullscreen  text-center flex flex-center">
         <div>
-            <div style="font-size: 30vh">404</div>
-
-            <div class="text-h2" style="opacity: 0.4">Oops. Nothing here...</div>
-
-            <q-btn class="q-mt-xl" color="white" text-color="blue" unelevated to="/" label="Go Home" no-caps />
+            <Vue3Lottie animation-link="https://lottie.host/5159fafe-365e-43b1-8105-b950be53583a/oLQadujN9s.json" :height="500"
+                :width="500" />
+            <q-btn unelevated to="/" label="Pagina principal" no-caps color="primary" />
         </div>
     </div>
 </template>

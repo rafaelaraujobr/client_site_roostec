@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.7",
-    "quasar": "^2.13.0"
+    "quasar": "^2.13.0",
+    "vue3-lottie": "^3.2.0"
   }
 }

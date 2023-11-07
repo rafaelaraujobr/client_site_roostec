@@ -2,6 +2,17 @@
 import { useQuasar } from 'quasar';
 import type { QBtnProps, QNotifyOptions } from 'quasar';
 
+const title = ref('My App')
+const description = ref('My App Description')
+
+useHead({
+  title,
+  meta: [{
+    name: 'description',
+    content: description
+  }]
+})
+
 const { dialog, bottomSheet, loading, loadingBar, notify, dark, screen } =
   useQuasar();
 
@@ -89,7 +100,14 @@ const buttons: QBtnProps[] = [
 ];
 </script>
 <template>
-  <q-page class="q-pl-lg">
+  <q-card class="bg-primary text-white no-border-radius" flat>
+    <q-card-section class="wrapper">
+      <div class="text-h6">Our Changing Planet</div>
+      <div class="text-subtitle2">by John Doe</div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    </q-card-section>
+  </q-card>
+  <q-page padding class="wrapper">
     <p class="text-h6 q-pt-md">Plugin Showcase</p>
     <q-list>
       <q-item v-for="(button, idx) in buttons" :key="idx">

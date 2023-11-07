@@ -19,10 +19,13 @@ export default defineNuxtConfig({
     //   font: "roboto-font",
     // },
     lang: "pt-BR",
+    iconSet: "material-symbols-rounded",
     components: {
       defaults: {
         QBtn: {
           unelevated: true,
+          dense: true,
+          noCaps: true,
         },
       },
     },
