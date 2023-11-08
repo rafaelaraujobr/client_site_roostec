@@ -1,6 +1,6 @@
 <template>
     <q-btn flat padding="sm" aria-label="mudarIdioma">
-        <q-avatar :size="$q.screen.gt.sm ? '26px' : '38px'">
+        <q-avatar :size="$q.screen.gt.sm ? '22px' : '38px'">
             <q-img src="@/assets/imgs/brazil-flag-icon.svg" spinner-color="primary" spinner-size="32" :ratio="1"
                 height="38px" alt="pt-br" v-if="$i18n.locale == 'pt'" />
             <q-img src="@/assets/imgs/united-states-flag-icon.svg" spinner-color="primary" spinner-size="32" :ratio="1" v-else
