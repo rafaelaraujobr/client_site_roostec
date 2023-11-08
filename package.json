@@ -12,6 +12,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.0.2",
+    "@nuxtjs/i18n": "^8.0.0-rc.5",
     "nuxt": "^3.8.1",
     "nuxt-quasar-ui": "^2.0.6",
     "sass": "^1.69.5",

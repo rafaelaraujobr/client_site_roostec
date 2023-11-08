@@ -4,7 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["@/assets/styles/custom.sass"],
   ssr: true,
-  modules: ["nuxt-quasar-ui"],
+  modules: ["nuxt-quasar-ui", "@nuxtjs/i18n"],
+  i18n: {
+    vueI18n: './i18n.config.ts'
+  },
   quasar: {
     sassVariables: "assets/styles/quasar.variables.sass",
     plugins: [

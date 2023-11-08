@@ -9,10 +9,11 @@
           <q-route-tab to="/about" exact name="about" label="Sobre nós" />
           <q-route-tab to="/solutions" exact name="solutions" label="Soluções" />
           <q-route-tab to="/articles" exact name="articles" label="Artigos" />
-          <q-route-tab to="/contact" exact name="contact" label="Contato" padding="sm md" />
+          <q-route-tab to="/contact" exact name="contact" :label="$t('CONTACT')" padding="sm md" />
         </q-tabs>
         <q-separator spaced inset vertical dark v-if="$q.screen.gt.sm" />
-        <div class="q-gutter-sm q-py-sm">
+        <div class="q-gutter-sm ">
+          <change-language />
           <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm"
             @click="Dark.toggle()" />
           <q-btn color="white" label="Entrar" outline padding="sm lg" />
@@ -32,6 +33,7 @@
 
 <script setup lang="ts">
 import { Dark } from 'quasar';
+import ChangeLanguage from '~/components/ChangeLanguage.vue';
 import { ref } from 'vue';
 const leftDrawerOpen = ref(false);
 const tab = ref('home')
