@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const title = ref('roostec solucoes')
+const title = ref('roostec - soluções')
 const description = ref('Desenvolvimento de sistemas e APIs web personalizadas para otimizar seu negócio')
 useHead({
   title,
