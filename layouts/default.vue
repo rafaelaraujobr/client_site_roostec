@@ -15,8 +15,8 @@
         <div class="q-gutter-sm">
           <change-language />
           <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm" :size="!$q.screen.gt.sm ? 'lg' : 'md'"
-            @click="Dark.toggle()" />
-          <q-btn color="white" label="Entrar" outline padding="sm lg" v-if="$q.screen.gt.sm" />
+            @click="Dark.toggle()" aria-label="modoDark" />
+          <q-btn color="white" label="Entrar" outline padding="sm lg" v-if="$q.screen.gt.sm"  aria-label="entrar"/>
         </div>
       </q-toolbar>
     </q-header>
