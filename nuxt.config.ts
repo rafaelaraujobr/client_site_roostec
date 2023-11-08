@@ -8,11 +8,11 @@ export default defineNuxtConfig({
     "nuxt-quasar-ui",
     "@nuxtjs/i18n",
     "@nuxtjs/robots",
-    // "nuxt-delay-hydration",
+    "nuxt-delay-hydration",
   ],
-  // delayHydration: { 
-  //   mode: 'init',
-  // }  
+  delayHydration: { 
+    mode: 'init',
+  }  
   i18n: {
     vueI18n: "./i18n.config.ts",
   },
