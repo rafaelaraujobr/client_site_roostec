@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  buildModules: ["nuxt-delay-hydration"],
   devtools: { enabled: true },
   css: ["@/assets/styles/custom.sass"],
   ssr: true,
