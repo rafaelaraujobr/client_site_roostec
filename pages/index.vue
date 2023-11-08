@@ -9,13 +9,19 @@ useHead({
   }]
 })
 
+function myTweak(offset: number = 0) {
+  return { minHeight: offset ? `calc(100vh - ${offset}px)` : '100vh' }
+}
+
 </script>
 <template>
-  <q-card class="bg-primary text-white no-border-radius" flat>
-    <q-card-section class="wrapper" style="padding-bottom: 50px;">
-      <div class="text-h5">Our Changing Planet</div>
+  <q-card class="bg-primary text-white no-border-radius q-py-lg" flat>
+    <q-card-section class="wrapper q-px-lg" style="padding-bottom: 50px;">
+      <div class="text-h4 q-py-md">Our Changing Planet</div>
       <div class="text-subtitle2">by John Doe</div>
-      Transformando ideias em soluções digitais avançadas. Vamos construir juntos o futuro digital!
+      <div class="q-py-sm">
+        Transformando ideias em soluções digitais avançadas. Vamos construir juntos o futuro digital!
+      </div>
     </q-card-section>
     <div class="wave-contain">
       <svg class="waves_effect" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -27,11 +33,11 @@ useHead({
           <use xlink:href="#gentle-wave" x="48" y="0" fill="#0C2340b3"></use>
           <use xlink:href="#gentle-wave" x="48" y="3" fill="#0C234080 "></use>
           <use xlink:href="#gentle-wave" x="48" y="5" fill="#0C23404d "></use>
-          <use xlink:href="#gentle-wave" x="48" y="7" :fill="$q.dark.isActive ? '#121212' : '#fff'"></use>
+          <use xlink:href="#gentle-wave" x="48" y="7" :fill="$q.dark.isActive ? '#121212' : '#FFFFFF'"></use>
         </g>
       </svg>
     </div>
   </q-card>
-  <q-page padding class="wrapper">
+  <q-page padding class="wrapper" :style-fn="myTweak">
   </q-page>
 </template>

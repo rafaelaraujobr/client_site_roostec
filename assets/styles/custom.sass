@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Poppins:wght@300;400;500;600&display=swap")
 *
     font-family: "Poppins", sans-serif
+    font-weight: 300
 
 .wrapper
     max-width: 1280px !important
     margin: 0 auto
 .q-focus-helper
     border-radius: $generic-border-radius !important
-    
+.q-tab__label
+    font-weight: 400
+
+.q-tabs--dense .q-tab
+    min-height: 42px
+
 .wave-contain
     margin: 6rem 0
 
@@ -19,7 +25,7 @@
     position: absolute
     bottom: 0
 
-.parallax>use
+.parallax > use
     animation: _move-wave 25s cubic-bezier(.55,.5,.45,.5) infinite
     &:nth-child(1)
         animation-delay: -2s
