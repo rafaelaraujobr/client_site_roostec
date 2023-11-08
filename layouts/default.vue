@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header>
       <q-toolbar class="wrapper">
-        <q-btn flat dense round icon="sym_r_" aria-label="Menu" @click="toggleLeftDrawer" v-if="!$q.screen.gt.sm" />
+        <q-btn flat dense round icon="sym_r_notes" aria-label="Menu" @click="toggleLeftDrawer" v-if="!$q.screen.gt.sm" />
         <q-toolbar-title> roostec </q-toolbar-title>
         <q-tabs v-model="tab" no-caps narrow-indicator class="q-py-xs" v-if="$q.screen.gt.sm">
           <q-route-tab to="/" exact name="home" label="Início" />
