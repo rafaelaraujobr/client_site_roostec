@@ -6,9 +6,9 @@ export default defineNuxtConfig({
   modules: [
     "nuxt-quasar-ui",
     "@nuxtjs/i18n",
-    // "@nuxtjs/robots",
+    "@nuxtjs/robots",
     "nuxt-delay-hydration",
-    "@vite-pwa/nuxt",
+    // "@vite-pwa/nuxt",
   ],
   delayHydration: {
     mode: "init",
@@ -16,10 +16,10 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: "./i18n.config.ts",
   },
-  // robots: {
-  //   UserAgent: "*",
-  //   Disallow: "",
-  // },
+  robots: {
+    UserAgent: "*",
+    Disallow: "",
+  },
   quasar: {
     sassVariables: "assets/styles/quasar.variables.sass",
     plugins: [
