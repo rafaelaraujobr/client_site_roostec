@@ -7,3 +7,56 @@
     margin: 0 auto
 .q-focus-helper
     border-radius: $generic-border-radius !important
+    
+.wave-contain
+    margin: 6rem 0
+
+.waves_effect
+    width: 100%
+    height: 3rem
+    margin-bottom: -.44rem
+    height: 7.5rem
+    position: absolute
+    bottom: 0
+
+.parallax>use
+    animation: _move-wave 25s cubic-bezier(.55,.5,.45,.5) infinite
+    &:nth-child(1)
+        animation-delay: -2s
+        animation-duration: 7s
+    &:nth-child(2)
+        animation-delay: -3s
+        animation-duration: 10s
+    &:nth-child(3)
+        animation-delay: -4s
+        animation-duration: 13s
+    &:nth-child(4)
+        animation-delay: -5s
+        animation-duration: 20s
+
+@media (max-width: 599.98px)
+    .wave-contain
+        margin: 2rem 0
+    .waves_effect
+        height: 2.5rem
+        min-height: 2.5rem
+
+@media (min-width: 600px) and (max-width: 1439.98px)
+    .wave-contain
+        margin: 5rem 0
+    .waves_effect
+        height: 5.5rem
+        min-height: 5.5rem
+
+@media (min-width: 1440px)
+    .wave-contain
+        margin: 3rem 0
+    .waves_effect
+        height: 3.5rem
+        min-height: 3.5rem
+
+@keyframes _move-wave
+    0%
+        transform: translate3d(-90px,0,0)
+    to
+        transform: translate3d(85px,0,0)

@@ -3,19 +3,12 @@
     <q-header>
       <q-toolbar class="wrapper">
         <div class="row col-3">
-          <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" v-if="!$q.screen.gt.sm" />
+          <q-btn flat dense round icon="sym_r_" aria-label="Menu" @click="toggleLeftDrawer" v-if="!$q.screen.gt.sm" />
           <q-toolbar-title> roostec </q-toolbar-title>
         </div>
-        <div class="col-6" v-ripple="false">
+        <div class="col-6" v-ripple="false" v-if="$q.screen.gt.sm">
           <q-tabs v-model="tab" no-caps narrow-indicator class="text-body1">
-            <q-route-tab to="/" exact name="home">
-              <q-item dense class="q-px-xs">
-                <q-item-section>
-                  <q-img src="@/assets/imgs/home-2.svg" :ratio="1" spinner-color="primary" spinner-size="51px"
-                    width="20px" />
-                </q-item-section>
-              </q-item>
-            </q-route-tab>
+            <q-route-tab to="/" exact name="home" label="Inicio" />
             <q-route-tab to="/about" exact name="about" label="Sobre nós" />
             <q-route-tab to="/solutions" exact name="solutions" label="Soluções" />
             <q-route-tab to="/articles" exact name="articles" label="Artigos" />
