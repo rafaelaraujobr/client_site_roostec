@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from "vue";
 const title = ref('roostec - soluções')
 const description = ref('Desenvolvimento de sistemas e APIs web personalizadas para otimizar seu negócio')
 useHead({
