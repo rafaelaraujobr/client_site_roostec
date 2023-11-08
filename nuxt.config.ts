@@ -10,9 +10,9 @@ export default defineNuxtConfig({
     "@nuxtjs/robots",
     "nuxt-delay-hydration",
   ],
-  delayHydration: { 
-    mode: 'init',
-  }  
+  delayHydration: {
+    mode: "init",
+  },
   i18n: {
     vueI18n: "./i18n.config.ts",
   },
