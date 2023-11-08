@@ -1,10 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  buildModules: ["nuxt-delay-hydration"],
   devtools: { enabled: true },
   css: ["@/assets/styles/custom.sass"],
   ssr: true,
-  modules: ["nuxt-quasar-ui", "@nuxtjs/i18n", "@nuxtjs/robots"],
+  modules: [
+    "nuxt-quasar-ui",
+    "@nuxtjs/i18n",
+    "@nuxtjs/robots",
+    "nuxt-delay-hydration",
+  ],
+  delayHydration: { 
+    mode: 'init',
+    // enables nuxt-delay-hydration in dev mode for testing  
+    debug: process.env.NODE_ENV === 'development'
+  }  
   i18n: {
     vueI18n: "./i18n.config.ts",
   },

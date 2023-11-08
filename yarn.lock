@@ -4058,6 +4058,16 @@ nuxi@^3.9.1:
   optionalDependencies:
     fsevents "~2.3.3"
 
+nuxt-delay-hydration@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/nuxt-delay-hydration/-/nuxt-delay-hydration-1.2.3.tgz#2ff055203c53b0559f84b44b4f675c2c33bd534b"
+  integrity sha512-Z+axsE2DbG/UuZLvMxeAf8XXzyuH4qkU5fJ84Q/CNoLtWUD+oudiOCbo+bahreZG5SYKQi5p8MCY1T0yLl9FyQ==
+  dependencies:
+    "@nuxt/kit" "^3.7.4"
+    lodash-es "^4.17.21"
+    packrup "^0.1.0"
+    radix3 "^1.1.0"
+
 nuxt-quasar-ui@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/nuxt-quasar-ui/-/nuxt-quasar-ui-2.0.6.tgz#c4df4fb741b6f03acbaba592b8c4f8011e06d248"
@@ -4254,6 +4264,11 @@ p-memoize@^7.1.1:
   dependencies:
     mimic-fn "^4.0.0"
     type-fest "^3.0.0"
+
+packrup@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/packrup/-/packrup-0.1.0.tgz#8a2d865a45aaee9807504046548678fa3382b6e3"
+  integrity sha512-HnUl9ztHGty5ZK13WM8Q7854SWPKH/eCT+MiTO0P1qCu1Y4S5PPJ8E9MwD3cnjSr7PUPzXDnmOVJIKM043OfJQ==
 
 pacote@^17.0.4:
   version "17.0.4"
