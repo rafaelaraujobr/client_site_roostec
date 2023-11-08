@@ -15,7 +15,7 @@
           <change-language />
           <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm"
             @click="Dark.toggle()" />
-          <q-btn color="white" label="Entrar" outline padding="sm lg" />
+          <q-btn color="white" label="Entrar" outline padding="sm lg" v-if="$q.screen.gt.sm" />
         </div>
       </q-toolbar>
     </q-header>
@@ -27,7 +27,7 @@
     <q-page-container>
       <slot />
     </q-page-container>
-    <q-card class="bg-secondary text-white no-border-radius q-py-lg" flat>
+    <!-- <q-card class="bg-secondary text-white no-border-radius q-py-lg" flat>
       <q-card-section class="wrapper q-px-lg" style="padding-bottom: 50px;">
         <div class="text-h4 q-py-md">Our Changing Planet</div>
         <div class="text-subtitle2">by John Doe</div>
@@ -35,12 +35,12 @@
           Transformando ideias em soluções digitais avançadas. Vamos construir juntos o futuro digital!
         </div>
       </q-card-section>
-    </q-card>
+    </q-card> -->
     <q-card flat class="bg-secondary text-white no-border-radius">
       <q-separator inset dark />
       <q-card-section class="wrapper">
         <div class="q-py-xs text-caption text-weight-light text-center">
-          Roostec desenvolvimento LTDA | CNPJ: 52.534.676/0001-69 | Av. das AMERICAS, BARRA DA TIJUCA, 04200 - Rio de de janeiro - RJ - Brasil | +55 21981842373
+          Roostec desenvolvimento LTDA | CNPJ: 52.534.676/0001-69 | Av. das Americas, Barra da Tijuca, 04200 - RJ - Brasil
         </div>
       </q-card-section>
     </q-card>

@@ -15,12 +15,22 @@ function myTweak(offset: number = 0) {
 
 </script>
 <template>
-  <q-card class="bg-primary text-white no-border-radius q-py-lg" flat>
-    <q-card-section class="wrapper q-px-lg" style="padding-bottom: 50px;">
-      <div class="text-h4 q-py-md">Our Changing Planet</div>
-      <div class="text-subtitle2">by John Doe</div>
-      <div class="q-py-sm">
-        Transformando ideias em soluções digitais avançadas. Vamos construir juntos o futuro digital!
+  <q-card class="bg-primary text-white no-border-radius q-pt-lg" flat>
+    <q-card-section class="wrapper row item-center q-pa-lg">
+      <div class="col-12 flex flex-center col-md-6 col-lg-6 col-xl-6">
+        <div>
+          <div class="text-h3 q-py-md text-center">Transformando ideias em soluções digitais!</div>
+          <div class="q-py-sm text-body1">
+            "Transformamos sua visões em realidade digital,
+            inovação, precisão e experiência em cada linha de código.
+            sua solução, nossa paixão, seu sucesso."
+          </div>
+        </div>
+      </div>
+      <div class="col-12 flex flex-center col-md-6 col-lg-6 col-xl-6">
+        <Vue3Lottie animation-link="https://lottie.host/6db8654a-d8f3-4a0d-ae63-2650695ed799/tinTzJZ28b.json"
+          :height="650" class="absolute" style="opacity: 0.1;" :width="650" />
+        <q-img src="@/assets/imgs/developer.svg" spinner-color="white" spinner-size="82px" width="356px" />
       </div>
     </q-card-section>
     <div class="wave-contain">
