@@ -31,11 +31,9 @@ function myTweak(offset: number = 0) {
         </div>
       </div>
       <div class="col-12 flex flex-center col-md-6 col-lg-6 col-xl-6" v-if="$q.screen.gt.sm">
-        <delay-hydration>
-          <Vue3Lottie animation-link="https://lottie.host/6db8654a-d8f3-4a0d-ae63-2650695ed799/tinTzJZ28b.json"
-            :height="650" class="absolute" style="opacity: 0.1;" :width="650" />
-          <q-img src="@/assets/imgs/developer.svg" spinner-color="white" spinner-size="82px" width="356px" />
-        </delay-hydration>
+        <Vue3Lottie animation-link="https://lottie.host/6db8654a-d8f3-4a0d-ae63-2650695ed799/tinTzJZ28b.json"
+          :height="650" class="absolute" style="opacity: 0.1;" :width="650" />
+        <q-img src="@/assets/imgs/developer.svg" spinner-color="white" spinner-size="82px" width="356px" />
       </div>
     </q-card-section>
     <div class="wave-contain">
