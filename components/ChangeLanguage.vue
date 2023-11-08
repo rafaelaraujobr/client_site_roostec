@@ -1,6 +1,6 @@
 <template>
     <q-btn flat padding="xs">
-        <q-avatar :size="$q.screen.gt.sm ? '32px' : '28px'">
+        <q-avatar :size="$q.screen.gt.sm ? '32px' : '38px'">
             <img src="@/assets/imgs/brazil-48.png" spinner-color="primary" spinner-size="32" :ratio="1" height="48px"
                 v-if="$i18n.locale == 'pt'" />
             <img src="@/assets/imgs/eua-48.png" spinner-color="primary" spinner-size="32" :ratio="1" v-else height="48px" />

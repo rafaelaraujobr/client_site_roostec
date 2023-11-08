@@ -2,7 +2,8 @@
   <q-layout view="lHh Lpr lFf">
     <q-header>
       <q-toolbar class="wrapper">
-        <q-btn flat dense round icon="sym_r_notes" aria-label="Menu" @click="toggleLeftDrawer" v-if="!$q.screen.gt.sm" />
+        <q-btn flat dense round icon="sym_r_notes" aria-label="Menu" @click="toggleLeftDrawer" v-if="!$q.screen.gt.sm"
+          size="lg" />
         <q-toolbar-title> roostec </q-toolbar-title>
         <q-tabs v-model="tab" no-caps narrow-indicator v-if="$q.screen.gt.sm" dense class="q-px-md">
           <q-route-tab to="/" exact name="home" :label="$t('HOME')" />
@@ -13,7 +14,7 @@
         </q-tabs>
         <div class="q-gutter-sm ">
           <change-language />
-          <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm"
+          <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm" :size="!$q.screen.gt.sm ? 'lg' : ''"
             @click="Dark.toggle()" />
           <q-btn color="white" label="Entrar" outline padding="sm lg" v-if="$q.screen.gt.sm" />
         </div>
