@@ -12,9 +12,9 @@
           <q-route-tab to="/articles" exact name="articles" label="Artigos" />
           <q-route-tab to="/contact" exact name="contact" :label="$t('CONTACT')" />
         </q-tabs>
-        <div class="q-gutter-sm ">
+        <div class="q-gutter-sm">
           <change-language />
-          <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm" :size="!$q.screen.gt.sm ? 'lg' : ''"
+          <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm" :size="!$q.screen.gt.sm ? 'lg' : 'md'"
             @click="Dark.toggle()" />
           <q-btn color="white" label="Entrar" outline padding="sm lg" v-if="$q.screen.gt.sm" />
         </div>
