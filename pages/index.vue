@@ -19,7 +19,9 @@ function myTweak(offset: number = 0) {
     <q-card-section class="wrapper row item-center q-pa-lg">
       <div class="col-12 flex flex-center col-md-6 col-lg-6 col-xl-6">
         <div>
-          <div class="text-h3 q-py-md text-center">Transformando ideias em soluções digitais!</div>
+          <div class="q-py-md text-center" :class="$q.screen.gt.sm ? 'text-h3' : 'text-h4'">Transformando ideias
+            em soluções
+            digitais!</div>
           <div class="q-py-sm text-body1">
             "Transformamos sua visões em realidade digital,
             inovação, precisão e experiência em cada linha de código.
