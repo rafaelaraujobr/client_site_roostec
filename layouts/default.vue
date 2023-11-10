@@ -15,11 +15,23 @@
           <q-route-tab to="/articles" exact name="articles" label="Artigos" />
           <q-route-tab to="/contact" exact name="contact" :label="$t('CONTACT')" />
         </q-tabs>
-        <div class="q-gutter-sm">
+        <div class="q-gutter-xs">
           <change-language />
-          <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm"
+          <q-btn flat padding="sm" aria-label="linkedin">
+            <q-avatar :size="$q.screen.gt.sm ? '22px' : '32px'" rounded>
+              <q-img src="@/assets/imgs/linkedin.svg" :ratio="1" spinner-color="primary" spinner-size="82px" alt="linkedin"
+                height="20px" />
+            </q-avatar>
+          </q-btn>
+          <q-btn flat padding="sm" aria-label="instagram">
+            <q-avatar :size="$q.screen.gt.sm ? '22px' : '32px'" rounded>
+              <q-img src="@/assets/imgs/instagram.svg" :ratio="1" spinner-color="primary" spinner-size="82px" alt="instagram"
+                height="20px" />
+            </q-avatar>
+          </q-btn>
+          <!-- <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm"
             :size="!$q.screen.gt.sm ? 'lg' : 'md'" @click="Dark.toggle()" aria-label="modoDark" />
-          <q-btn color="white" label="Entrar" outline padding="sm lg" v-if="$q.screen.gt.sm" aria-label="entrar" />
+          <q-btn color="white" label="Entrar" outline padding="sm lg" v-if="$q.screen.gt.sm" aria-label="entrar" /> -->
         </div>
       </q-toolbar>
     </q-header>
