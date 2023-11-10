@@ -18,15 +18,15 @@
         <div class="q-gutter-xs">
           <change-language />
           <q-btn flat padding="sm" aria-label="linkedin">
-            <q-avatar :size="$q.screen.gt.sm ? '22px' : '32px'" rounded>
-              <q-img src="@/assets/imgs/linkedin.svg" :ratio="1" spinner-color="primary" spinner-size="82px" alt="linkedin"
-              :size="$q.screen.gt.sm ? '22px' : '32px'" />
+            <q-avatar :size="$q.screen.gt.sm ? '22px' : '28px'" square>
+              <q-img src="@/assets/imgs/linkedin.svg" :ratio="1" spinner-color="primary" spinner-size="82px"
+                alt="linkedin" :size="$q.screen.gt.sm ? '22px' : '32px'" />
             </q-avatar>
           </q-btn>
           <q-btn flat padding="sm" aria-label="instagram">
-            <q-avatar :size="$q.screen.gt.sm ? '22px' : '32px'" rounded>
-              <q-img src="@/assets/imgs/instagram.svg" :ratio="1" spinner-color="primary" spinner-size="82px" alt="instagram"
-              :size="$q.screen.gt.sm ? '22px' : '32px'" />
+            <q-avatar :size="$q.screen.gt.sm ? '24px' : '30px'" square>
+              <q-img src="@/assets/imgs/instagram.svg" :ratio="1" spinner-color="primary" spinner-size="82px"
+                alt="instagram" :size="$q.screen.gt.sm ? '22px' : '32px'" />
             </q-avatar>
           </q-btn>
           <!-- <q-btn color="primary" :icon="$q.dark.isActive ? 'sym_r_dark_mode' : 'sym_r_light_mode'" padding="sm"
@@ -55,9 +55,13 @@
 </template>
 
 <script setup lang="ts">
-import { Dark } from 'quasar';
+// import { Dark } from 'quasar';
 import ChangeLanguage from '~/components/ChangeLanguage.vue';
 import { ref } from 'vue';
+// import { getPreferredColorScheme } from '@/utils/theme'
+// onMounted(() => {
+//   console.log(getPreferredColorScheme())
+// })
 const leftDrawerOpen = ref(false);
 const tab = ref('home')
 function toggleLeftDrawer(): void {

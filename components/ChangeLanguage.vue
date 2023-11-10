@@ -1,10 +1,10 @@
 <template>
-    <q-btn flat padding="sm" aria-label="language">
-        <q-avatar :size="$q.screen.gt.sm ? '22px' : '32px'">
+    <q-btn flat aria-label="language" round>
+        <q-avatar :size="$q.screen.gt.sm ? '22px' : '28px'">
             <q-img src="@/assets/imgs/brazil-flag-icon.svg" spinner-color="primary" spinner-size="32" :ratio="1"
                 height="38px" alt="pt-br" v-if="$i18n.locale == 'pt'" />
-            <q-img src="@/assets/imgs/united-states-flag-icon.svg" spinner-color="primary" spinner-size="32" :ratio="1" v-else
-                height="38px" alt="en-us" />
+            <q-img src="@/assets/imgs/united-states-flag-icon.svg" spinner-color="primary" spinner-size="32" :ratio="1"
+                v-else height="38px" alt="en-us" />
         </q-avatar>
         <q-menu>
             <q-list style="min-width: 100px">
