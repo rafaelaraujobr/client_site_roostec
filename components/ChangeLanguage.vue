@@ -1,5 +1,5 @@
 <template>
-    <q-btn flat aria-label="language" round>
+    <q-btn flat padding="sm" aria-label="language" round>
         <q-avatar :size="$q.screen.gt.sm ? '22px' : '28px'">
             <q-img src="@/assets/imgs/brazil-flag-icon.svg" spinner-color="primary" spinner-size="32" :ratio="1"
                 height="38px" alt="pt-br" v-if="$i18n.locale == 'pt'" />
