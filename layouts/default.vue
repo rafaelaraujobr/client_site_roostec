@@ -4,10 +4,10 @@
       <q-toolbar class="wrapper">
         <q-btn flat dense round icon="sym_r_notes" aria-label="Menu" @click="toggleLeftDrawer" v-if="!$q.screen.gt.sm"
           size="lg" />
-        <q-toolbar-title> roostec </q-toolbar-title>
-        <!-- <q-toolbar-title>
-          <q-img src="@/assets/imgs/roostec_light.svg" width="128px" spinner-color="primary" spinner-size="82px" />
-        </q-toolbar-title> -->
+        <!-- <q-toolbar-title> roostec </q-toolbar-title> -->
+        <q-toolbar-title>
+          <q-img src="@/assets/imgs/roostec_light.svg" width="100px" spinner-color="primary" spinner-size="82px" />
+        </q-toolbar-title>
         <q-tabs v-model="tab" no-caps narrow-indicator v-if="$q.screen.gt.sm" dense class="q-px-md">
           <q-route-tab to="/" exact name="home" :label="$t('HOME')" />
           <q-route-tab to="/about" exact name="about" label="Sobre nós" />
