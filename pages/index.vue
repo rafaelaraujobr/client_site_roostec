@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { Screen } from "quasar"
 const title = ref('roostec - soluções')
 const description = ref('Desenvolvimento de sistemas e APIs web personalizadas para otimizar seu negócio')
 useHead({
@@ -10,8 +11,9 @@ useHead({
   }]
 })
 
-function myTweak(offset: number = 0) {
-  return { minHeight: offset ? `calc(100vh - ${offset}px)` : '100vh' }
+function myTweak(offset: Number, height: Number) {
+  if (!Screen.gt.sm) return { minHeight: offset ? `calc(100vh - ${+offset + 384 + 61}px)` : '100vh' }
+  else return { minHeight: offset ? `calc(100vh - ${+offset + 460 + 61}px)` : '100vh' }
 }
 
 </script>
@@ -51,6 +53,44 @@ function myTweak(offset: number = 0) {
       </svg>
     </div>
   </q-card>
-  <q-page padding class="wrapper" :style-fn="myTweak">
+  <q-page class="wrapper" :style-fn="myTweak">
+    <q-card class="row q-col-gutter-md" flat>
+      <div class="col-4">
+        <q-card flat>
+          <q-card-section class="flex flex-center">
+            <q-img src="@/assets/imgs/site.png" width="180px" />
+          </q-card-section>
+          <q-card-section style="margin-top: -30px;">
+            <div class="text-h5 text-primary">Web Site</div>
+            Destaque-se online com um site personalizado para sua marca. Desenvolvemos experiências digitais envolventes
+            que combinam design atraente com funcionalidade intuitiva para engajar e impressionar visitantes.
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-4">
+        <q-card flat>
+          <q-card-section class="flex flex-center">
+            <q-img src="@/assets/imgs/system.png" width="180px" />
+          </q-card-section>
+          <q-card-section style="margin-top: -30px;">
+            <div class="text-h5 text-primary">Sistema Web</div>
+            Simplifique operações com sistemas web responsivos e customizados. Desenvolvemos soluções eficientes e
+            centradas no usuário, garantindo desempenho excepcional para sua empresa.
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-4">
+        <q-card flat>
+          <q-card-section class="flex flex-center">
+            <q-img src="@/assets/imgs/api.png" width="180px" />
+          </q-card-section>
+          <q-card-section style="margin-top: -30px;">
+            <div class="text-h5 text-primary">API</div>
+            Construímos APIs poderosas e personalizadas para integrar suas aplicações. Facilitamos a interconexão entre
+            sistemas, desbloqueando novas funcionalidades e oportunidades para sua tecnologia
+          </q-card-section>
+        </q-card>
+      </div>
+    </q-card>
   </q-page>
 </template>
