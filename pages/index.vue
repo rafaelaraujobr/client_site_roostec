@@ -55,7 +55,7 @@ function myTweak(offset: Number, height: Number) {
   </q-card>
   <q-page class="wrapper" :style-fn="myTweak">
     <q-card class="row q-col-gutter-md" flat>
-      <div class="col-4">
+      <div class="col-4 col-lg-4 col-md-4 col-xs-12">
         <q-card flat>
           <q-card-section class="flex flex-center">
             <q-img src="@/assets/imgs/site.png" width="180px" />
@@ -67,7 +67,7 @@ function myTweak(offset: Number, height: Number) {
           </q-card-section>
         </q-card>
       </div>
-      <div class="col-4">
+      <div class="col-4 col-lg-4 col-md-4 col-xs-12">
         <q-card flat>
           <q-card-section class="flex flex-center">
             <q-img src="@/assets/imgs/system.png" width="180px" />
@@ -79,7 +79,7 @@ function myTweak(offset: Number, height: Number) {
           </q-card-section>
         </q-card>
       </div>
-      <div class="col-4">
+      <div class="col-4 col-lg-4 col-md-4 col-xs-12">
         <q-card flat>
           <q-card-section class="flex flex-center">
             <q-img src="@/assets/imgs/api.png" width="180px" />
